@@ -69,7 +69,7 @@ ul { list-style: none; }
 .btn:hover { transform: translateY(-2px); }
 
 .btn--primary {
-  background: var(--color-orange);
+  background: var(--color-red);
   color: var(--color-white);
   box-shadow: var(--shadow-sm);
 }
@@ -80,7 +80,7 @@ ul { list-style: none; }
   color: var(--color-ink);
   border-color: var(--color-border);
 }
-.btn--ghost:hover { border-color: var(--color-orange); color: var(--color-orange-dark); }
+.btn--ghost:hover { border-color: var(--color-red); color: var(--color-red); }
 
 .btn--outline {
   background: transparent;
@@ -122,7 +122,7 @@ ul { list-style: none; }
   color: var(--color-ink);
   letter-spacing: -0.5px;
 }
-.logo span { color: var(--color-orange); }
+.logo span { color: var(--color-red); }
 
 .nav {
   display: flex;
@@ -145,7 +145,7 @@ ul { list-style: none; }
   position: absolute;
   left: 0; right: 0; bottom: -4px;
   height: 3px;
-  background: var(--color-orange);
+  background: var(--color-red);
   border-radius: 2px;
 }
 
@@ -188,8 +188,8 @@ ul { list-style: none; }
 
 .eyebrow {
   display: inline-block;
-  background: rgba(242, 134, 39, 0.12);
-  color: var(--color-orange-dark);
+  background: rgba(191, 51, 38, 0.12);
+  color: var(--color-red);
   font-weight: 700;
   font-size: 0.8rem;
   letter-spacing: 0.4px;
@@ -240,12 +240,12 @@ ul { list-style: none; }
 .hero__card--1 {
   top: 10%;
   left: 10%;
-  border-left: 4px solid var(--color-orange);
+  border-left: 4px solid var(--color-red);
 }
 .hero__card--2 {
   bottom: 8%;
   right: 6%;
-  border-left: 4px solid var(--color-red);
+  border-left: 4px solid var(--color-orange-dark);
 }
 
 /* ===========================
@@ -277,9 +277,16 @@ ul { list-style: none; }
   display: flex;
   align-items: center;
   justify-content: center;
-  background: var(--color-light);
+  background: rgba(191, 51, 38, 0.08);
   border-radius: var(--radius-sm);
   margin-bottom: 18px;
+}
+
+.highlight-card {
+  border-top: 3px solid transparent;
+}
+.highlight-card:hover {
+  border-top-color: var(--color-red);
 }
 
 .highlight-card h3 {
@@ -296,7 +303,7 @@ ul { list-style: none; }
    CTA BAND
 =========================== */
 .cta-band {
-  background: linear-gradient(120deg, var(--color-ink), #1a1b2e);
+  background: linear-gradient(120deg, var(--color-ink) 55%, var(--color-red) 180%);
   color: var(--color-white);
   padding: 56px 0;
 }
@@ -346,7 +353,7 @@ ul { list-style: none; }
   margin-bottom: 10px;
   transition: color 0.2s ease;
 }
-.footer__col a:hover { color: var(--color-orange); }
+.footer__col a:hover { color: var(--color-red); }
 
 .footer__bottom {
   padding: 24px 0;
