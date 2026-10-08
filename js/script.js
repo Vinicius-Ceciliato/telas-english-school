@@ -16,9 +16,6 @@ if (yearEl) {
 
 'use strict';
 
-const nav = document.getElementById('nav');
-const navToggle = document.getElementById('navToggle');
-
 function closeMenu() {
   nav?.classList.remove('is-open');
   navToggle?.setAttribute('aria-expanded', 'false');
